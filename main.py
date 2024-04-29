@@ -22,9 +22,9 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6305751172:AAG3f0lLXE-ivB1r3xP0VSvUfR0nKfURYfM",
-             api_id= 29759544,
-             api_hash= "97030a871720998c6efc5debcce67aa4")
+             bot_token= "7122616406:AAFZMsm3v7WgDjSKlR4gw3i9krzG4MaOLDA",
+             api_id= 24478182,
+             api_hash= "a98b5be0127986be1cc2553dbd99765e")
 
 
 @bot.on_message(filters.command(["start"]))
@@ -41,7 +41,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["tuktuk"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('Send TXT file for download')
+    editable = await m.reply_text('𝕋𝕆 ᴅᴏᴡɴʟᴏᴀᴅ ᴀ ᴛxᴛ ғɪʟᴇ 𝕤ᴇɴᴅ ʜᴇʀᴇ ⚡️')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -76,7 +76,7 @@ async def account_login(bot: Client, m: Message):
     await input1.delete(True)
     
 
-    await editable.edit("**Enter resolution**")
+    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n\n144,240,360,480,720,1080 please choose quality**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -100,7 +100,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter A Highlighter Otherwise send 👉Co👈 **")
+    await editable.edit("**𝔼ɴᴛᴇʀ Your Name or send **")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
